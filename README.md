@@ -1,4 +1,4 @@
-# DeliMeals
+# Deli Meals
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -10,7 +10,7 @@
 ## Overview
 ### Description
 
-DeliMeals is a delicious meal recipe app with curated recipes for a wide range of audiences and supports dietary restrictions.
+Deli Meals is a delicious meal recipe app with curated recipes for a wide range of audiences and supports dietary restrictions.
 
 ## Product Specs
 ### User Stories

@@ -1,5 +1,6 @@
-import 'package:delimeals_flutter/models/widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
+
+import '../../models/widgets/main_drawer.dart';
 
 class FiltersScreen extends StatefulWidget {
   static const String id = 'filters_screen';
@@ -20,7 +21,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
   bool _vegan = false;
 
   @override
-  initState() {
+  void initState() {
     _glutenFree = widget.currentFilters['gluten'];
     _lactoseFree = widget.currentFilters['lactose'];
     _vegetarian = widget.currentFilters['vegetarian'];

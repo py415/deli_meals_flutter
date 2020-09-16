@@ -1,5 +1,6 @@
-import 'package:delimeals_flutter/dummy_data.dart';
 import 'package:flutter/material.dart';
+
+import '../../dummy_data.dart';
 
 class MealDetailScreen extends StatelessWidget {
   static const String id = 'meal_detail_screen';

@@ -1,7 +1,7 @@
-import 'package:delimeals_flutter/models/widgets/meal_item.dart';
 import 'package:flutter/material.dart';
 
 import '../../models/meal.dart';
+import '../../models/widgets/meal_item.dart';
 
 class FavoritesScreen extends StatefulWidget {
   static const String id = 'favorites_screen';
