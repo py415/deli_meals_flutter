@@ -2,7 +2,7 @@ import 'package:delimeals_flutter/dummy_data.dart';
 import 'package:flutter/material.dart';
 
 class MealDetailScreen extends StatelessWidget {
-  static String id = 'meal_detail_screen';
+  static const String id = 'meal_detail_screen';
 
   Widget buildSectionTitle(BuildContext ctx, String text) {
     return Container(
@@ -83,6 +83,14 @@ class MealDetailScreen extends StatelessWidget {
             ),
           ),
         ]),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(
+          Icons.delete,
+        ),
+        onPressed: () {
+          Navigator.of(context).pop(mealId);
+        },
       ),
     );
   }

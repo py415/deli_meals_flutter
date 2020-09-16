@@ -1,9 +1,11 @@
-import 'package:delimeals_flutter/views/screens/categories_screen.dart';
-import 'package:delimeals_flutter/views/screens/favorites_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'categories_screen.dart';
+import 'favorites_screen.dart';
+import '../../models/widgets/main_drawer.dart';
+
 class TabsScreen extends StatefulWidget {
-  static String id = 'tabs_screen';
+  static const String id = 'tabs_screen';
 
   @override
   _TabsScreenState createState() => _TabsScreenState();
@@ -34,6 +36,7 @@ class _TabsScreenState extends State<TabsScreen> {
       appBar: AppBar(
         title: Text(_pages[_selectPageIndex]['title']),
       ),
+      drawer: MainDrawer(),
       body: _pages[_selectPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,

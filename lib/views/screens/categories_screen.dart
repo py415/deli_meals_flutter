@@ -4,7 +4,7 @@ import '../../dummy_data.dart';
 import '../../models/widgets/category_item.dart';
 
 class CategoriesScreen extends StatelessWidget {
-  static String id = 'categories_screen';
+  static const String id = 'categories_screen';
 
   @override
   Widget build(BuildContext context) {
