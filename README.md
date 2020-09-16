@@ -25,9 +25,9 @@ Deli Meals is a delicious meal recipe app with curated recipes for a wide range 
 
 Here's a GIF of how the app works:
 
-<img src="https://github.com/py415/app-resources/blob/master/flutter/ios/flutter-ios-delimeals.gif" width=250>
+<img src="https://github.com/py415/app-resources/blob/master/flutter/ios/flutter-ios-deli-meals.gif" width=250>
 
-<img src="https://github.com/py415/app-resources/blob/master/flutter/android/flutter-android-delimeals.gif" width=250>
+<img src="https://github.com/py415/app-resources/blob/master/flutter/android/flutter-android-deli-meals.gif" width=250>
 
 ## Libraries
 
