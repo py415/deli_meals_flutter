@@ -19,7 +19,7 @@ DeliMeals is a delicious meal recipe app with curated recipes for a wide range o
 - [x] User shall be able to tap a meal and see a detailed recipe with required ingredients and instructions for preparation.
 - [ ] User shall be able to favorite meal recipe.
 - [ ] User shall be able to view previously favorited meals in a separate tab.
-- [ ] User shall be able to filter meals based on dietary restrictions.
+- [x] User shall be able to filter meals based on dietary restrictions.
 
 ## App Walkthrough
 
