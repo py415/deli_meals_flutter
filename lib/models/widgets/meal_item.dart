@@ -3,12 +3,19 @@ import 'package:flutter/material.dart';
 import '../../models/meal.dart';
 import '../../views/screens/meal_detail_screen.dart';
 
+// Blueprint for meal item widget.
 class MealItem extends StatelessWidget {
+  // Id used to identify specific meal item (e.g. 1 for Spaghetti with Tomato Sauce).
   final String id;
+  // Name of meal recipe (e.g. Toast Hawaii).
   final String title;
+  // Image url of meal recipe (e.g. link to Toast Hawaii recipe image).
   final String imageUrl;
+  // Estimated duration to cook meal (e.g. 20 minutes).
   final int duration;
+  // Complexity of meal recipe (e.g. Easy).
   final Complexity complexity;
+  // Affordability of meal recipe (e.g. Affordable).
   final Affordability affordability;
 
   MealItem({
@@ -20,6 +27,7 @@ class MealItem extends StatelessWidget {
     @required this.affordability,
   });
 
+  // Get String for meal recipe complexity based on Complexity (enum) classification.
   String get complexityText {
     switch (complexity) {
       case Complexity.Simple:
@@ -36,6 +44,7 @@ class MealItem extends StatelessWidget {
     }
   }
 
+  // Get String for meal recipe affordability based on Affordability (enum) classification.
   String get affordabilityText {
     switch (affordability) {
       case Affordability.Affordable:
@@ -52,9 +61,10 @@ class MealItem extends StatelessWidget {
     }
   }
 
+  // Segue to meal recipe details screen when user taps on specific meal recipe.
   void selectMeal(BuildContext ctx) {
     Navigator.of(ctx).pushNamed(
-      MealDetailScreen.id,
+      MealDetailScreen.routeName,
       arguments: id,
     );
   }
@@ -62,6 +72,7 @@ class MealItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      // Segue to meal recipe detail screen.
       onTap: () => selectMeal(context),
       child: Card(
         shape: RoundedRectangleBorder(

@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import '../../dummy_data.dart';
 import '../../models/widgets/category_item.dart';
 
+// Blueprint for cuisine category screen.
 class CategoriesScreen extends StatelessWidget {
-  static const String id = 'categories_screen';
+  // Route name to screen.
+  static const String routeName = '/';
 
   @override
   Widget build(BuildContext context) {

@@ -3,9 +3,12 @@ import 'package:flutter/material.dart';
 import '../../models/widgets/meal_item.dart';
 import '../../models/meal.dart';
 
+// Blueprint for meal recipe screen.
 class CategoryMealsScreen extends StatefulWidget {
-  static const String id = 'category_meals_screen';
+  // Route name to screen.
+  static const String routeName = '/category-meals';
 
+  // List of meal recipes for cuisine.
   final List<Meal> availableMeals;
 
   CategoryMealsScreen(this.availableMeals);
@@ -15,8 +18,11 @@ class CategoryMealsScreen extends StatefulWidget {
 }
 
 class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
+  // Title of the meal recipe.
   String categoryTitle;
+  // List of meal recipe on display.
   List<Meal> displayedMeals;
+  // Toggle inital data on load.
   var _loadedInitData = false;
 
   @override
@@ -26,6 +32,9 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
 
   @override
   void didChangeDependencies() {
+    super.didChangeDependencies();
+
+    // Load initial meal recipe data if it was not already loaded.
     if (!_loadedInitData) {
       final routeArgs =
           ModalRoute.of(context).settings.arguments as Map<String, String>;
@@ -36,7 +45,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
       }).toList();
       _loadedInitData = true;
     }
-    super.didChangeDependencies();
   }
 
   @override

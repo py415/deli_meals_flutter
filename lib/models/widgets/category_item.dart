@@ -2,15 +2,20 @@ import 'package:flutter/material.dart';
 
 import '../../views/screens/category_meals_screen.dart';
 
+// Blueprint for category item widget.
 class CategoryItem extends StatelessWidget {
+  // ID for meal category (e.g. Italian is 1).
   final String id;
+  // Meal category title (e.g. Italian, Quick & Easy, Hamburgers, etc...).
   final String title;
+  // Meal category color (e.g. Italian is purple).
   final Color color;
 
   CategoryItem(this.id, this.title, this.color);
 
+  // Segue to selected meal category screen.
   void selectCategory(BuildContext ctx) {
-    Navigator.of(ctx).pushNamed(CategoryMealsScreen.id, arguments: {
+    Navigator.of(ctx).pushNamed(CategoryMealsScreen.routeName, arguments: {
       'id': id,
       'title': title,
     });

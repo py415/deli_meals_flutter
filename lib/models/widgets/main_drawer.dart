@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import '../../views/screens/tabs_screen.dart';
 import '../../views/screens/filters_screen.dart';
 
+// Blueprint for main drawer widget.
 class MainDrawer extends StatelessWidget {
+  // Widget for list tile in main drawer (e.g. Meals or Filter).
   Widget buildListTile(String title, IconData icon, Function tapHandler) {
     return ListTile(
       leading: Icon(
@@ -18,6 +20,7 @@ class MainDrawer extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
       ),
+      // Segue to selected list tile (e.g. If you tap 'Meals', segue to Meals screen).
       onTap: tapHandler,
     );
   }
@@ -46,14 +49,17 @@ class MainDrawer extends StatelessWidget {
             'Meals',
             Icons.restaurant,
             () {
-              Navigator.of(context).pushReplacementNamed(TabsScreen.id);
+              // Segue to Meals category screen when user taps 'Meals' tile list.
+              Navigator.of(context).pushReplacementNamed(TabsScreen.routeName);
             },
           ),
           buildListTile(
             'Filters',
             Icons.settings,
             () {
-              Navigator.of(context).pushReplacementNamed(FiltersScreen.id);
+              // Segue to Filters screen when user taps 'Filters' tile list.
+              Navigator.of(context)
+                  .pushReplacementNamed(FiltersScreen.routeName);
             },
           ),
         ],

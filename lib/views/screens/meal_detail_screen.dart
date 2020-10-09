@@ -2,10 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../../dummy_data.dart';
 
+// Blueprint for meal recipe details screen.
 class MealDetailScreen extends StatelessWidget {
-  static const String id = 'meal_detail_screen';
+  // Route name to screen.
+  static const String routeName = '/meal-detail';
 
+  // Toggle favorite status.
   final Function toggleFavorite;
+  // Check if meal recipe is favorited.
   final Function isFavorite;
 
   MealDetailScreen(this.toggleFavorite, this.isFavorite);
@@ -36,7 +40,9 @@ class MealDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Id for selected meal recipe.
     final mealId = ModalRoute.of(context).settings.arguments as String;
+    // Selected meal based on meal id.
     final selectedMeal = DUMMY_MEALS.firstWhere((meal) => meal.id == mealId);
 
     return Scaffold(
@@ -94,6 +100,7 @@ class MealDetailScreen extends StatelessWidget {
         child: Icon(
           isFavorite(mealId) ? Icons.star : Icons.star_border,
         ),
+        // Toggle status for favorite.
         onPressed: () => toggleFavorite(mealId),
       ),
     );

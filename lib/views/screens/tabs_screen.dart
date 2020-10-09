@@ -5,8 +5,11 @@ import 'favorites_screen.dart';
 import '../../models/meal.dart';
 import '../../models/widgets/main_drawer.dart';
 
+// Blueprint for tab screen.
 class TabsScreen extends StatefulWidget {
-  static const String id = 'tabs_screen';
+  // Route name to screen.
+  static const String routeName = '/tab-screen';
+  // List of favorited meals.
   final List<Meal> favoriteMeals;
 
   TabsScreen(this.favoriteMeals);
@@ -16,7 +19,9 @@ class TabsScreen extends StatefulWidget {
 }
 
 class _TabsScreenState extends State<TabsScreen> {
+  // List of tabs.
   List<Map<String, Object>> _pages;
+  // Selected tab.
   int _selectPageIndex = 0;
 
   @override
@@ -34,6 +39,7 @@ class _TabsScreenState extends State<TabsScreen> {
     super.initState();
   }
 
+  // Change selected tab.
   void _selectPage(int index) {
     setState(() {
       _selectPageIndex = index;
