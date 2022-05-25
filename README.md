@@ -1,18 +1,18 @@
-# Deli Meals
+# 🥪 Deli Meals
 
-## Table of Contents
-1. [Overview](#Overview)
-2. [Product Specs](#Product-Specs)
-3. [App Walkthrough](#App-Walkthrough)
-4. [Libraries](#Libraries)
-5. [Credits](#Credits)
+## 📋 Table of Contents
+1. [Overview](#-Overview)
+2. [Product Specs](#-Product-Specs)
+3. [App Walkthrough](#-App-Walkthrough)
+4. [Libraries](#-Libraries)
+5. [Credits](#–Credits)
 
-## Overview
+## 👀 Overview
 ### Description
 
 Deli Meals is a delicious meal recipe app with curated recipes for a wide range of audiences and supports dietary restrictions.
 
-## Product Specs
+## 📕 Product Specs
 ### User Stories
 
 - [x] User shall be able to browse through a list of meals by cuisine / category.
@@ -21,19 +21,19 @@ Deli Meals is a delicious meal recipe app with curated recipes for a wide range 
 - [x] User shall be able to view previously favorited meals in a separate tab.
 - [x] User shall be able to filter meals based on dietary restrictions.
 
-## App Walkthrough
+## 🎬 App Walkthrough
 
 Here's a GIF of how the app works:
 
-<img src="https://raw.githubusercontent.com/py415/app-resources/master/flutter/ios/flutter-ios-deli-meals.gif" width="250" />
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/GIFs/flutter/ios/flutter-ios-deli-meals.gif" width="250" />
 
-<img src="https://raw.githubusercontent.com/py415/app-resources/master/flutter/android/flutter-android-deli-meals.gif" width="250" />
+<img src="https://github.com/py415/app-resources/blob/master/GIFs/flutter/android/flutter-android-deli-meals.gif" width="250" />
 
-## Libraries
+## 📚 Libraries
 
 - [cupertino_icons](https://github.com/flutter/cupertino_icons) - This is an asset repo containing the default set of icon assets used by Flutter's [Cupertino widgets](https://github.com/flutter/flutter/tree/master/packages/flutter/lib/src/cupertino).
 - [pedantic](https://github.com/dart-lang/pedantic) - Most of the recommended lints directly implement the guidelines set out in [Effective Dart](https://dart.dev/guides/language/effective-dart).
 
-## Credits
+## 💳 Credits
 
 >This is a companion project to Flutter & Dart - The Complete Guide, check out the full course at [www.academind.com](https://academind.com/).
